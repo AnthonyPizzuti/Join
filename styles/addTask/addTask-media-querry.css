@@ -1,0 +1,156 @@
+@media screen and (max-width: 1427px) {
+  body {
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .form-column-left {
+    width: 350px;
+  }
+
+  .form-column-right {
+    width: 350px;
+  }
+
+  .divider {
+    left: 750px;
+  }
+
+  .priority {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1260px) {
+  .form-column-right {
+    left: 800px;
+  }
+
+  .divider {
+    left: 700px;
+  }
+
+  .priority {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .form-column-right {
+    left: 720px;
+  }
+
+  .divider {
+    left: 680px;
+  }
+
+  .priority {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  body {
+    overflow-y: scroll;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  .contentH2 {
+    width: 100%;
+    height: 162px;
+    top: 96px;
+    position: fixed;
+    z-index: 1;
+    background-color: #f6f7f8;
+    left: 330px;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .form-column-left {
+    top: 269px;
+    left: 330px;
+  }
+
+  .form-column-right {
+    position: absolute;
+    left: 330px;
+    margin-top: 294px;
+  }
+
+  .addTask-buttons {
+    z-index: 5;
+    width: 100%;
+    position: absolute;
+    left: 95px;
+  }
+
+  .bg-mobile-buttons {
+    background-color: #f6f7f8;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 232px;
+    right: 0;
+    z-index: 5;
+    height: 84px;
+  }
+
+  .divider {
+    display: none;
+  }
+
+  .priority {
+    width: 100%;
+  }
+
+  .add-task-label {
+    top: 1010px;
+    left: 465px;
+    padding-bottom: 120px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  body {
+    position: absolute;
+    overflow-y: scroll;
+    overflow: scroll;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  .form-column-left {
+    left: 295px;
+  }
+
+  .form-column-right {
+    left: 295px;
+  }
+
+  .addTask-buttons {
+    left: 63px;
+  }
+
+  .add-task-label {
+    left: 295px;
+  }
+
+  .bg-addTask {
+    width: 100%;
+    height: 162px;
+    top: 96px;
+    position: fixed;
+    z-index: 1;
+    background-color: #f6f7f8;
+    left: 232px;
+    display: flex;
+    align-items: flex-end;
+  }
+}

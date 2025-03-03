@@ -1,0 +1,238 @@
+
+
+@media (max-width: 1340px) {
+
+    .contact-content {
+        left: 688px;
+        padding-left: 1.5rem;
+    }
+
+    /* Linkes Modal */
+    .modal-left {
+        width: 424px;
+    }
+
+    /* Rechtes Modal */
+    .modal-right {
+        width: 704px;
+    }
+
+    .modal-userImg-Background {
+        margin: 56px;
+    }
+}
+
+@media (max-width: 1240px) {
+
+    .modal {
+        flex-direction: column;
+    }
+
+    .contact-content {
+        display: flex;
+        align-items: center;
+        left: 552px;
+        padding: 0;
+    }
+
+    .contact-content-head {
+        flex-direction: column;
+    }
+
+    .contact-content-head hr {
+        width: 59px;
+        height: 0;
+    }
+
+    .contact-content-table {
+        position: absolute;
+        top: 205px;
+        gap: 24px;
+        align-items: center;
+    }
+
+    .contact-content-table-usernameFullinformation {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        text-align: center;
+    }
+
+    .contact-content-information {
+        display: contents;
+        font-weight: 600;
+    }
+
+    .contact-content-table-usernameFullinformation div p {
+        padding: 6px 0;
+    }
+
+    .modal-left {
+        width: 704px;
+        border-top-right-radius: 32px;
+        border-bottom-left-radius: unset;
+        height: 250px;
+    }
+
+    .modal-left img {
+        max-width: 48px;
+        max-height: 59px;
+    }
+
+    .modal-left-div {
+        padding: unset;
+        align-items: center;
+    }
+
+    .modal-right {
+        border-top-right-radius: unset;
+        border-bottom-left-radius: 32px;
+        height: 400px;
+    }
+
+    .modal-right-div {
+        padding: unset;
+    }
+
+    .modal-right-top {
+        display: none;
+    }
+
+    /* Add New Contact Btn */
+    .add-new-contact-btn {
+        width: 256px;
+        left: calc(50% - 256px / 2);
+    }
+
+    /* Contact Board oder Liste */
+    .contact-board {
+        width: 320px;
+    }
+
+    .contact-content-table-usernameAndIcons {
+        flex-direction: column;
+        gap: 8px;
+        max-height: unset;
+    }
+
+    .userIconTableNameDiv {
+        align-items: center;
+        width: unset;
+    }
+
+    .user-shortcut-email {
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width: 1050px) {
+
+    /* Header allg. */
+    header {
+        padding: 20px 40px 20px 280px;
+    }
+
+    .contact-content {
+        top: 96px;
+        left: 232px;
+        bottom: 280px;
+        height: calc(54.6% - 160px);
+        padding: 110px 0;
+    }
+
+    .contact-content-head {
+        justify-content: center;
+        flex-direction: row;
+        background-color: var(--background-color-body);
+        width: calc(100% - 232px);
+    }
+
+    .contact-content-head hr {
+        width: 0px;
+        height: 59px;
+    }
+
+    .contact-content-table {
+        position: relative;
+        top: unset;
+    }
+
+    .contact-content-table-usernameAndIcons {
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .contact-content-table-editAndDeleteIcons {
+        width: 100%;
+    }
+
+    .add-new-contact-btn {
+        width: -webkit-fill-available;
+        left: unset;
+    }
+
+    .add-new-contact-btn p {
+        font-size: 23px;
+    }
+
+    .add-new-contact-btn img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .contact-board {
+        height: 51.4%;
+        bottom: 0;
+        top: unset;
+        width: -webkit-fill-available;
+        max-width: 100%;
+    }
+
+    .user-shortcut-email {
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    /* Allg. zum Modal */
+    .modal-left {
+        width: 640px;
+    }
+
+    .modal-right {
+        width: 640px;
+    }
+
+    .modal-userImg-Background {
+        margin: 32px;
+    }
+
+    .modal-inputfield input {
+        width: 404px;
+    }
+
+    .modal-inputfield-buttons {
+        width: 404px;
+    }
+
+    .contact-content-head {
+        flex-direction: column;
+        width: calc(100% - 232px);
+    }
+
+    .contact-content-head hr {
+        width: 59px;
+        height: 0;
+    }
+
+    .contact-content-table-usernameAndIcons {
+        flex-direction: column;
+    }
+
+    .contact-content-table-editAndDeleteIcons {
+        justify-content: center;
+    }
+
+}

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summary</title>
+    <link rel="stylesheet" href="./styles/font.css">
+    <link rel="shortcut icon" href="./assets/img/favicon-dark.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/color-template.css">
+    <link rel="stylesheet" href="./styles/headerMobile.css">
+    <link rel="stylesheet" href="./styles/summary/summaryMobile.css">
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.0.0/firebase-database.js"></script>
+    <script src="./script/firebase-config.js"></script>
+    <script src="./script/setProfile.js" defer></script>
+    <script src="./script/userMenu.js" defer></script>
+    <script src="./script/checkMaxWidth.js"></script>
+    <script src="./script/summary/summaryMobile.js"></script>
+</head>
+
+<body onload="loadSummary()">
+    <header>
+        <img src="./assets/img/logo.png" id="logo">
+        <div>
+            <div id="userProfil" onclick="openUserMenu()">
+                <span id="initials">SM</span>
+            </div>
+        </div>
+        <div class="userMenu dNone" id="userMenu">
+            <div class="userMenuButton" onclick="helpBtn()">
+                <span class="userMenuBtnSpan">
+                    Help
+                </span>
+            </div>
+            <div class="userMenuButton" onclick="menuLegalBtn()">
+                <span class="userMenuBtnSpan">
+                    Legal Notice
+                </span>
+            </div>
+            <div class="userMenuButton" onclick="menuPrivacyBtn()">
+                <span class="userMenuBtnSpan">
+                    Privacy Policy
+                </span>
+            </div>
+            <div class="userMenuButton" onclick="logOutBtn()">
+                <span class="userMenuBtnSpan">
+                    Log out
+                </span>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <div class="h1Div">
+            <div id="joinKeyMetrics">
+                <h1>Join 360</h1>
+                <div class="h1UnderlineDiv">
+                    <p>Key Metrics at a Glance</p>
+                </div>
+            </div>
+            <div id="devidingVector"></div>
+        </div>
+
+        <div class="cardOverviewDiv">
+            <div class="toDoAndDoneDiv" onclick="boardBtn()">
+                <div class="toDoAndDoneCard">
+                    <img src="./assets/icons/summary/pencil40.png" alt="">
+                    <div id="toDoCounter">
+                        <span id="toDoCounterSpan"></span>
+                        <span class="toDoDoneSpan">To-Do</span>
+                    </div>
+                </div>
+                <div class="toDoAndDoneCard" onclick="boardBtn()">
+                    <img src="./assets/icons/summary/check40.png" alt="">
+                    <div id="doneCounter">
+                        <span id="doneCounterSpan"></span>
+                        <span class="toDoDoneSpan">Done</span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="urgentTaskBox" onclick="boardBtn()">
+                <img src="./assets/icons/summary/roundUrgent40.png" alt="">
+                <div id="amountUrgentTasksDiv">
+                    <span id="urgentAmount">1</span>
+                    <span id="urgentSpam">Urgent</span>
+                </div>
+                <div id="vectorHorizontal"></div>
+                <div id="deadlineDiv">
+                    <span id="deadlineDate">October 16, 2022</span>
+                    <span id="upcommingSpan">Upcoming Deadline</span>
+                </div>
+            </div>
+
+            <div class="taskOverview">
+                <div class="taskOverviewCard" onclick="boardBtn()">
+                    <div class="taskCounterDiv">
+                        <span class="taskCount" id="totalCount"></span>
+                        <span class="taskCounterText">Tasks in Board</span>
+                    </div>
+                </div>
+                <div class="taskOverviewCard" onclick="boardBtn()">
+                    <div class="taskCounterDiv">
+                        <span class="taskCount" id="inProgress"></span>
+                        <span class="taskCounterText">Tasks in Progress</span>
+                    </div>
+                </div>
+                <div class="taskOverviewCard" onclick="boardBtn()">
+                    <div class="taskCounterDiv">
+                        <span class="taskCount" id="awaitReview"></span>
+                        <span class="taskCounterText">Awaiting Feedback</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <!--Jungs hier die klasse activ setzen bei eurer Seite -->
+        <div class="outerButtonDiv activ" onclick="summaryBtn()">
+            <div class="innerMenuButton">
+                <img src="./assets/icons/summary24.png" alt="">
+                <span class="mobileMenuBtns">Summary</span>
+            </div>
+        </div>
+        <div class="outerButtonDiv" onclick="boardBtn()">
+            <div class="innerMenuButton">
+                <img src="./assets/icons/board24.png" alt="">
+                <span class="mobileMenuBtns">Board</span>
+            </div>
+        </div>
+        <div class="outerButtonDiv" onclick="addTaskBtn()">
+            <div class="innerMenuButton">
+                <img src="./assets/icons/addTask24.png" alt="">
+                <span class="mobileMenuBtns">Add Task</span>
+            </div>
+        </div>
+        <div class="outerButtonDiv" onclick="contactsBtn()">
+            <div class="innerMenuButton">
+                <img src="./assets/icons/contacts24.png" alt="">
+                <span class="mobileMenuBtns">Contacts</span>
+            </div>
+        </div>
+    </nav>
+</body>
+
+</html>

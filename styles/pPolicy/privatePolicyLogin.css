@@ -1,0 +1,68 @@
+.logo {
+    width: 102px;
+    height: 122px;
+    top: 20px;
+    left: 20px;
+}
+
+.pp {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 200px 30px 30px 350px;
+    max-width: 1920px;
+    gap: 20px;
+}
+
+.content {
+    padding-left: 232px;
+    padding-top: 80px;
+    z-index: 0;
+    height: fit-content;
+}
+
+#arrowLeft {
+    width: 21.33px;
+    height: 20.74px;
+    cursor: pointer;
+}
+
+.arrowLeft {
+    z-index: 3;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+    /* Glatte Übergänge */
+    flex-direction: row-reverse;
+    width: 100%;
+    max-width: 1920px;
+    gap: 30px;
+}
+
+#arrowLeft:hover {
+    background-color: lightgrey;
+    transform: scale(1.2);
+    /* Vergrößert das Element um 20% */
+    border-radius: 18px;
+    /* Beibehaltung des runden Effekts */
+}
+
+h1 {
+    font-size: 47px;
+}
+
+h2 {
+    font-size: 27px;
+}
+
+
+@media (max-width: 820px) {
+    .pp {
+        margin: 200px 30px 30px 252px !important;
+    }
+
+    h1 {
+        font-size: 45px; 
+    }
+}

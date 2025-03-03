@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" href="./assets/img/favicon-dark.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/login/loginMobile.css">
+    <link rel="stylesheet" href="./styles/login/signUpMobile.css">
+    <link rel="stylesheet" href="./styles/login/loginButtonsMobile.css">
+    <link rel="stylesheet" href="./styles/login/loginLegalLinks.css">
+    <link rel="stylesheet" href="./styles/font.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="./script/firebase-config.js"></script>
+    <script src="./script/checkMaxWidth.js"></script>
+    <script src="./script/login/loginMobile.js"></script>
+    <script src="./script/login/register.js"></script>
+    <script src="./script/login/loginHTMLtemplates.js"></script>
+</head>
+
+<body>
+    <div class="overlay" id="overlay"></div>
+    <div class="logo-container" id="logoContainer">
+        <img src="./assets/img/logo-2.png" alt="Logo" class="logo" id="logo">
+    </div>
+
+    <div id="signedUp" class="signedInFont">You Signed Up Succesfully</div>
+
+    <div class="dNone" id="loginContainer">
+        <h1>Log in</h1>
+        <div class="vector"></div>
+        <form onsubmit="login(); return false" method="post" novalidate>
+            <div class="lockWrapper">
+                <input type="email" placeholder="Email" id="email" required>
+                <img src="./assets/icons/Login/mail.svg" alt="" class="mail">
+            </div>
+            <div class="lockWrapper">
+                <input type="password" placeholder="Password" id="password" required>
+                <img src="./assets/icons/Login/lock.svg" alt="" class="lock">
+            </div>
+            <message id="msgBox" class="dNone">Username or Password wrong</message>
+            <label id="rememberMe"><input type="checkbox" class="customCheckbox" id="rememberMee"> Remember me</label>
+            <div class="loginButtons">
+                <button type="submit" class="buttonLogIn">
+                    <span class="btnTextLogin">Log in</span>
+                </button>
+                <button type="button" class="buttonGuestLog" onclick="guestLogin()">
+                    <span id="guestLogText">Guest Log in</span>
+                </button>
+            </div>
+        </form>
+
+    </div>
+    <div class="visabilityHidden not-a-user" id="notAUser">
+        <span id="newUserSpan">Not a Join user?</span>
+        <button onclick="loadRegister()" class="signUpBtn">
+            <span id="signUpBtnText">Sign up</span>
+        </button>
+    </div>
+    <div class="ppAndLnBox dNone" id="ppAndLnBox">
+        <span class="ppSpan">
+            <a href="loginPPolicy.html" id="ppLink" target="_blank">Privacy Policy</a>
+        </span>
+        <span class="lNSpan">
+            <a href="loginLNotice.html" id="lNLink" target="_blank">Legal Notice</a>
+        </span>
+    </div>
+</body>
+
+</html>

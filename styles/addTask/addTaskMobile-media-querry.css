@@ -1,0 +1,81 @@
+@media screen and (max-width: 510px) {
+    
+}
+
+@media screen and (max-width: 510px) {
+  body {
+    position: absolute;
+    overflow-y: scroll;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
+  }
+
+  .form-column-left {
+    left: 60px;
+  }
+
+  .form-column-right {
+    left: 60px;
+  }
+
+  .addTask-buttons {
+    left: 150px;
+  }
+
+  .bg-mobile-buttons {
+    left: 60px;
+  }
+
+  .addTask-buttons {
+    margin-left: unset;
+  }
+
+  .contentH2 {
+    padding-left: 80px;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .form-column-left,
+  .form-column-right,
+  .bg-mobile-buttons {
+    left: 50px;
+  }
+
+  .contentH2 {
+    padding-left: 70px;
+  }
+
+  .form-column-left,
+  .form-column-right {
+    width: 300px;
+  }
+
+  .priority {
+    width: auto;
+    gap: 0;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .form-column-left,
+  .form-column-right,
+  .bg-mobile-buttons {
+    left: 8px;
+  }
+
+  .contentH2 {
+    padding-left: 25px;
+  }
+
+  .form-column-left,
+  .form-column-right {
+    width: 300px;
+  }
+
+  .add-task-label {
+    left: 6px;
+  }
+}

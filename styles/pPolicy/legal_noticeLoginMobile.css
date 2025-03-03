@@ -1,0 +1,41 @@
+.ln {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  margin: 124px 20px;
+  padding-bottom: 50px;
+  overflow-y: auto;
+}
+
+h1 {
+  font-size: 47px;
+}
+
+#arrowLeft {
+  width: 21.33px;
+  height: 20.74px;
+  cursor: pointer;
+}
+
+.arrowLeft {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  /* Glatte Übergänge */
+  flex-direction: row-reverse;
+  width: 100%;
+  max-width: 540px;
+  gap: 30px;
+}
+
+#arrowLeft:hover {
+  background-color: lightgrey;
+  transform: scale(1.2);
+  /* Vergrößert das Element um 20% */
+  border-radius: 18px;
+  /* Beibehaltung des runden Effekts */
+}
+
+

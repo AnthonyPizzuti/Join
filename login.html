@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="shortcut icon" href="./assets/img/favicon-dark.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/login/login.css">
+    <link rel="stylesheet" href="./styles/login/signUp.css">
+    <link rel="stylesheet" href="./styles/login/loginLegalLinks.css">
+    <link rel="stylesheet" href="./styles/font.css">
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="./script/firebase-config.js"></script>
+    <script src="./script/checkMaxWidth.js"></script>
+    <script src="./script/login/login.js"></script>
+    <script src="./script/login/register.js"></script>
+    <script src="./script/login/loginHTMLtemplates.js"></script>
+</head>
+
+<body>
+    <!-- Logo-Bereich -->
+    <div class="logo-container" id="logoContainer">
+        <img src="./assets/img/logo.png" alt="Logo" class="logo">
+    </div>
+
+    <div id="signedUp" class="signedInFont">You Signed Up Succesfully</div>
+
+    <!-- "Not a User?" Bereich außerhalb der Card -->
+    <div class="dNone" id="notAUser">
+        Not a Join user? <button onclick="loadRegister()" class="signUpBtn"><span id="signUpBtnText">Sign
+                up</span></button>
+    </div>
+
+
+    <div class="dNone" id="loginContainer">
+        <h1>Log in</h1>
+        <div class="vector"></div>
+        <form onsubmit="login(); return false" method="post">
+            <div class="lockWrapper">
+                <input type="text" placeholder="Email" id="email" required>
+                <img src="./assets/icons/Login/mail.svg" alt="" class="mail">
+            </div>
+            <div class="lockWrapper">
+                <input type="password" placeholder="Password" id="password" required>
+                <img src="./assets/icons/Login/lock.svg" alt="" class="lock">
+            </div>
+            <message id="msgBox" class="dNone">Username or Password wrong</message>
+            <label id="rememberMe"><input type="checkbox" class="customCheckbox" id="rememberMee"> Remember me</label>
+            <div class="loginButtons">
+                <button type="submit" class="buttonLogIn"><span class="btnTextLogin">Log in</span></button>
+                <button type="button" class="buttonGuestLog" onclick="guestLogin()"><span id="guestLogText">Guest Log
+                        in</span></button>
+            </div>
+        </form>
+
+    </div>
+    <div class="ppAndLnBox dNone" id="ppAndLnBox">
+        <span class="ppSpan">
+            <a href="loginPPolicyMobile.html" id="ppLink" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+        </span>
+        <span class="lNSpan">
+            <a href="loginLNoticeMobile.html" id="lNLink" target="_blank" rel="noopener noreferrer">Legal Notice</a>
+        </span>
+    </div>
+</body>
+
+</html>

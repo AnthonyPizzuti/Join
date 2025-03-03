@@ -1,0 +1,16 @@
+
+
+@media (max-height: 650px) {
+    .modal {
+        height: -webkit-fill-available;
+    }
+    
+    .modal-inputfield-div form {
+        gap: 8px;
+    }
+
+    .modal-inputfield {
+        gap: 16px;
+        height: unset;    
+    }
+}

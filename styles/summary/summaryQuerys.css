@@ -1,0 +1,144 @@
+@media (max-width: 1355px) {
+    #daytime {
+        font-size: 36px;
+    }
+
+    #userName {
+        font-size: 46px;
+    }
+
+    .greetingBox {
+        width: fit-content;
+    }
+}
+
+@media (max-width: 1150px) {
+    .greetingBox {
+        left: 910px;
+    }
+}
+
+@media (max-width: 1090px) {
+    .greetingBox {
+        left: 493px;
+        top: 905px;
+    
+    }
+}
+
+@media (max-width: 960px) {
+    .h1Div {
+        justify-content: unset;
+        width: fit-content;
+    }
+
+    .h1Div h1 {
+        font-size: 46px;
+    }
+
+    .h1UnderlineDiv {
+        width: 296.5px;
+    }
+
+    .h1UnderlineDiv p {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 900px) {
+    .cardOverviewDiv {
+        left: 245px;
+    }
+
+    .h1Div {
+        left: 330px;
+    }
+    .greetingBox {
+        left: 417px;
+    }
+    
+}
+
+@media (max-width: 870px) {
+    .h1Div {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .h1UnderlineDiv {
+        border: unset;
+        width: fit-content;
+        height: auto;
+    }
+
+    .h1Div h1 {
+        border-bottom: solid #29ABE2;;
+    }
+}
+
+@media (max-width: 830px) {
+    .cardOverviewDiv {
+        max-width: 460px;
+        width: 100%;
+    }
+
+    .toDoAndDoneDiv {
+        width: 100%;
+        /* Container passt sich dynamisch an */
+        max-width: 460px;
+    }
+
+    .toDoAndDoneCard {
+        width: calc((100% - 10px * 3) / 2);
+    }
+
+    .urgentDeadlineDiv {
+        width: 100%;
+        padding: 28px 13px;
+        gap: 36px;
+    }
+
+    .urgentDeadlineDiv:hover {
+        padding: 28px 13px;
+        gap: 34px;
+    }
+
+    .urgentDeadlineDiv:hover,
+    .toDoAndDoneCard:hover, 
+    .taskOverviewCard:hover {
+        transform: scale(1.03);
+    }
+    
+    .taskOverview {
+        width: 100%;
+    }
+
+    .taskOverviewCard {
+        width: calc((100% - 20px * 2) / 3);
+    }
+
+    .greetingBox {
+        left: 363px;
+    }
+
+}
+
+@media (max-width: 737px) {
+    .cardOverviewDiv {
+        max-width: 400px;
+    }
+
+    .cardOverviewDiv {
+        left: 245px;
+    }
+
+    .urgentDeadlineDiv,
+    .urgentDeadlineDiv:hover {
+        gap: 5px;
+    }
+
+    .greetingBox {
+        left: 252px;
+    }
+}
