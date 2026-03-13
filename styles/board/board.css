@@ -510,6 +510,13 @@ ul {
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
   z-index: 1000;
   animation: slideInFromRight 300ms ease-out forwards;
+  max-height: 90vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+   &::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 .error-message {
